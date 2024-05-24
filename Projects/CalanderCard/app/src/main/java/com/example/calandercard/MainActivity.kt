@@ -171,10 +171,17 @@ fun SetGuestList(guests: List<String>, count: Int, liable: Boolean) {
         ) {
             if (isExpanded) {
                 items(guests) {guest ->
-                    Text(text = guest,
-                        fontFamily = FontFamily.Cursive,
-                        modifier = Modifier.padding(4.dp)
-                    )
+                    Row (modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically) {
+                        Surface (modifier = Modifier.size(width = 20.dp, height = 20.dp),
+                            shape = CircleShape,
+                            border = BorderStroke(width = 1.dp, color = Color.Black),
+                            color = Color.LightGray) {}
+                        Text(text = guest,
+                            fontFamily = FontFamily.Cursive,
+                            modifier = Modifier.padding(4.dp)
+                        )
+                    }
                 }
             }
         }
