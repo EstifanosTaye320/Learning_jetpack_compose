@@ -1,4 +1,4 @@
-package com.example.video_game_cataloger.sampledata.screens.sampledata
+package com.example.video_game_cataloger.presentation.screens.sampledata
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn

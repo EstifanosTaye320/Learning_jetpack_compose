@@ -6,41 +6,22 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.example.video_game_cataloger.presentation.composables.GameItem
+import com.example.video_game_cataloger.presentation.data.games
+import com.example.video_game_cataloger.presentation.screens.sampledata.AboutPage
+import com.example.video_game_cataloger.presentation.screens.sampledata.LoginPage
+import com.example.video_game_cataloger.presentation.screens.sampledata.RegistrationPage
+
 import com.example.video_game_cataloger.ui.theme.Video_Game_CatalogerTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Video_Game_CatalogerTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
-            }
+
+                    AboutPage()
+
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Video_Game_CatalogerTheme {
-        Greeting("Android")
     }
 }
