@@ -16,7 +16,7 @@ sealed class GamesState {
 }
 
 class GamesViewModel : ViewModel() {
-    private val _state = MutableStateFlow<GamesState>(GamesState.Loaded(games))
+    private val _state = MutableStateFlow<GamesState>(GamesState.Error("Error Message by Estif"))
     val state: StateFlow<GamesState> = _state
 
     fun loadGames() {
