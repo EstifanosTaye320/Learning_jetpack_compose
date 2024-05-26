@@ -42,7 +42,7 @@ fun LoginPage() {
     val snackbarHostState = remember { SnackbarHostState() }
     val scope = rememberCoroutineScope()
 
-    Scaffold(        snackbarHost = { SnackbarHost (snackbarHostState) },
+    Scaffold(snackbarHost = { SnackbarHost (snackbarHostState) },
         content = {
             Box(
                 modifier = Modifier.fillMaxSize().padding(it)

@@ -38,6 +38,7 @@ fun GameItem(game: Game) {
         shape = RoundedCornerShape(10.dp),
         modifier = Modifier
             .fillMaxWidth()
+            .height(270.dp)
             .padding(8.dp)
             .clickable {
                 // Handle the card click here if needed
